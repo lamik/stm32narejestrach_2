@@ -14,8 +14,8 @@
  */
 #include "main.h"
 
-#define LD4_ON GPIOA->BSRR |= GPIO_BSRR_BS5
-#define LD4_OFF GPIOA->BSRR |= GPIO_BSRR_BR5
+#define LD4_ON GPIOA->BSRR = GPIO_BSRR_BS5
+#define LD4_OFF GPIOA->BSRR = GPIO_BSRR_BR5
 
 // PA5 - LD4
 
